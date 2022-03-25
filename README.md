@@ -17,34 +17,34 @@
 </pre>
 <h2>String 과 Char의 차이</h2>
 <pre>
-   String 클래스는 Char배열을 할당 받는다.
-   
-   char a1 = 'a' 는 a1 변수안에 'a' 라는 값을 가진다.
-   String a1 = 'a1' 는 'a1'라는 값이 위치한 좌표값을 가진다.
-   
-   String number = "12345";
-   String number2 = "12345";
-   String number3 = new String("12345");
-   String number4 = new String("12345");
+String 클래스는 Char배열을 할당 받는다.
 
-   System.out.println(number.equals(number2));  // 내용물을 비교한다.
-   System.out.println(number == number2);       // 주소값을 비교한다.
-   System.out.println(number3.equals(number4)); // 내용물을 비교한다.
-   System.out.println(number3 == number4);      // 주소값을 비교한다.
-   
-   출력값
-   true 
-   true
-   true
-   false
-   
+char a1 = 'a' 는 a1 변수안에 'a' 라는 값을 가진다.
+String a1 = 'a1' 는 'a1'라는 값이 위치한 좌표값을 가진다.
+
+String number = "12345";
+String number2 = "12345";
+String number3 = new String("12345");
+String number4 = new String("12345");
+
+System.out.println(number.equals(number2));  // 내용물을 비교한다.
+System.out.println(number == number2);       // 주소값을 비교한다.
+System.out.println(number3.equals(number4)); // 내용물을 비교한다.
+System.out.println(number3 == number4);      // 주소값을 비교한다.
+
+출력값
+true 
+true
+true
+false
+
 </pre>
 
 <h2>엑셀 다운로드 하면서 삽질...</h2>
 <pre>
-   계속 기존에 ExcelView 라이브러리에서 캐스팅을 못하길래 삽질 하던 와중....
-   HSSFWorkbook workbook = (HSSFWorkbook) transformer.transformXLS(inputStream, beans);  // 2003년 버전 엑셀
-   XSSFWorkbook workbook = (XSSFWorkbook) transformer.transformXLS(inputStream, beans); // 2003년 이후 버전 엑셀….
-   
-   휴...
+계속 기존에 ExcelView 라이브러리에서 캐스팅을 못하길래 삽질 하던 와중....
+HSSFWorkbook workbook = (HSSFWorkbook) transformer.transformXLS(inputStream, beans);  // 2003년 버전 엑셀
+XSSFWorkbook workbook = (XSSFWorkbook) transformer.transformXLS(inputStream, beans); // 2003년 이후 버전 엑셀….
+
+휴...
 </pre>
