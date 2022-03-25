@@ -43,7 +43,6 @@
 <h2>엑셀 다운로드 하면서 삽질...</h2>
 <pre>
    계속 기존에 ExcelView 라이브러리에서 캐스팅을 못하길래 삽질 하던 와중....
-   
    HSSFWorkbook workbook = (HSSFWorkbook) transformer.transformXLS(inputStream, beans);  // 2003년 버전 엑셀
    XSSFWorkbook workbook = (XSSFWorkbook) transformer.transformXLS(inputStream, beans); // 2003년 이후 버전 엑셀….
    
